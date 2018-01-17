@@ -2,11 +2,7 @@ const express = require('express');
 const app = express();
 const data = require('./fileLoader');
 
-app.get('/', (req, res) => {
-  // console.log("hey " + files.data["barkeep"]);
-  console.log(barkeep[0]);
-  res.json(barkeep);
-});
+app.use(express.static('./static'));
 
 app.get('/barkeep/:count?', (req, res, next) => {
   res.json(getRand('barkeep', req.params.count));
