@@ -1,0 +1,11 @@
+{
+  "name": "talehouse",
+  "version": "0.0.1",
+  "description": "poc for devon",
+  "main": "main.js",
+  "author": "d-eff",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.2"
+  }
+}
