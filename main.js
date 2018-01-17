@@ -1,23 +1,13 @@
 const express = require('express');
 const app = express();
-const files = require('./fileLoader');
-
-let mdata = {};
+const { barkeep, story, tellMe, truth } = require('./fileLoader');
 
 app.get("/", (req, res) => {
   // console.log("hey " + files.data["barkeep"]);
-  console.log("hey " + mdata);
-  res.json(mdata);
+  console.log(barkeep[0]);
+  res.json(barkeep);
 });
 
-const startServer = () => {
-  files.loadFiles().then(data => {
-    console.log("data" + data);
-    mdata = data;
-    app.listen(3000, () => {
-      console.log("server")
-    });
-  });
-}
-
-startServer();
+app.listen(3000, () => {
+  console.log("server")
+});
