@@ -4,7 +4,7 @@ body {
 }
 
 .hand {
-  background-color: white;
+  background-color: lightcyan;
   display: flex;
   justify-content: center;
   position: absolute;
@@ -23,11 +23,17 @@ body {
   height: 170px;
   width: 70vw;
 }
+.horizontal .card {
+  margin: 5px -40px 5px;
+}
 .vertical {
   flex-flow: column wrap;
   top: 5vh;
   height: 90vh;
   width: 150px;
+}
+.vertical .card {
+  margin: -85px 5px 0;
 }
 
 #player1Hand {
@@ -47,13 +53,17 @@ body {
 .card {
   align-content: center;
   background-color: lightgoldenrodyellow;
+  border: 1px solid black;
   box-sizing: border-box;
   font-size: 12px;
   height: 160px;
-  margin: 5px;
   overflow: hidden;
   padding: 10px;
   width: 140px; 
+  z-index: 1;
+}
+.card:hover {
+  z-index: 2;
 }
 
 .bigCard {
@@ -64,6 +74,8 @@ body {
   margin: 5px;
   overflow: hidden;
   padding: 10px;
+  position: absolute;
+  top: 170px;
   width: 300px; 
 }
 
@@ -71,22 +83,22 @@ body {
   background-color: lightgray;
   display: flex;
   flex-flow: row wrap;
-  height: 35vh;
+  height: 200px;
   left: 20vw;
-  padding: 20px;
+  padding: 10px 20px;
   position: absolute;
-  top: 40vh;
+  top: 350px;
   width: 60vw;
+}
+#story .card {
+  margin: 5px;
 }
 
 #tellMe {
-  position: absolute;
   left: 20vw;
-  top: 20vh;
 }
 
 #catchPhrase {
   position: absolute;
   left: 50vw;
-  top: 20vh;
 }
