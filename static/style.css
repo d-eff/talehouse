@@ -45,3 +45,15 @@ body {
   padding: 10px;
   width: 110px; 
 }
+
+#story {
+  background-color: lightgray;
+  display: flex;
+  flex-flow: row wrap;
+  height: 40vh;
+  left: 20vw;
+  padding: 20px;
+  position: absolute;
+  top: 30vh;
+  width: 60vw;
+}
