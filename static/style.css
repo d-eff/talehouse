@@ -27,7 +27,7 @@ body {
   flex-flow: column wrap;
   top: 5vh;
   height: 90vh;
-  width: 120px;
+  width: 150px;
 }
 
 #player1Hand {
@@ -48,11 +48,12 @@ body {
   align-content: center;
   background-color: lightgoldenrodyellow;
   box-sizing: border-box;
+  font-size: 12px;
   height: 160px;
   margin: 5px;
   overflow: hidden;
   padding: 10px;
-  width: 110px; 
+  width: 140px; 
 }
 
 .bigCard {

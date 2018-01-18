@@ -13,7 +13,7 @@ const populateHand = (handId, numCards) => {
   const hand = document.getElementById(`player${handId}Hand`);
   const fragment = document.createDocumentFragment();
 
-  getRequest(`/barkeep/${numCards}`).then((data) => {
+  getRequest(`/story/${numCards}`).then((data) => {
     for (var counter = 0; counter < numCards; counter++) {
       const card = document.createElement("div");
       card.className = "card";
@@ -38,7 +38,7 @@ const populateStoryCards = () => {
   getRequest('/tellMe').then((data) => {
     tellMe.textContent = data;
   });
-  getRequest('/story').then((data) => {
+  getRequest('/barkeep').then((data) => {
     catchPhrase.textContent = data;
   });
 };
