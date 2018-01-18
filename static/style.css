@@ -1,5 +1,6 @@
 body {
   background-color: lightblue;
+  counter-reset: hand;
 }
 
 .hand {
@@ -7,6 +8,14 @@ body {
   display: flex;
   justify-content: center;
   position: absolute;
+}
+
+.hand:before {
+  counter-increment: hand;
+  content: 'Player 'counter(hand);
+  position: absolute;
+  left: 0;
+  top: 0;
 }
 .horizontal {
   flex-flow: row wrap;

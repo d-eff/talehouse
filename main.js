@@ -30,6 +30,4 @@ const getRand = (section, count = 1) => {
   return response;
 }
 
-app.listen(3000, () => {
-  console.log('server');
-});
+app.listen(3000, () => {});
