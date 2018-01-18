@@ -55,14 +55,37 @@ body {
   width: 110px; 
 }
 
+.bigCard {
+  align-content: center;
+  background-color: lightgoldenrodyellow;
+  box-sizing: border-box;
+  height: 160px;
+  margin: 5px;
+  overflow: hidden;
+  padding: 10px;
+  width: 300px; 
+}
+
 #story {
   background-color: lightgray;
   display: flex;
   flex-flow: row wrap;
-  height: 40vh;
+  height: 35vh;
   left: 20vw;
   padding: 20px;
   position: absolute;
-  top: 30vh;
+  top: 40vh;
   width: 60vw;
+}
+
+#tellMe {
+  position: absolute;
+  left: 20vw;
+  top: 20vh;
+}
+
+#catchPhrase {
+  position: absolute;
+  left: 50vw;
+  top: 20vh;
 }

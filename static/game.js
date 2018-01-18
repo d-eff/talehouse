@@ -25,14 +25,29 @@ const populateHand = (handId, numCards) => {
   });
 };
 
-const main = () => {
-  const story = document.getElementById('story');
-  containers.containers.push(story);
+const populateAllHands = () => {
   populateHand('1', '5');
   populateHand('2', '5');
   populateHand('3', '5');
   populateHand('4', '5');
-  
+};
+
+const populateStoryCards = () => {
+  const tellMe = document.getElementById('tellMe');
+  const catchPhrase = document.getElementById('catchPhrase');
+  getRequest('/tellMe').then((data) => {
+    tellMe.textContent = data;
+  });
+  getRequest('/story').then((data) => {
+    catchPhrase.textContent = data;
+  });
+};
+
+const main = () => {
+  const story = document.getElementById('story');
+  containers.containers.push(story);
+  populateAllHands();
+  populateStoryCards();
 };
 
 main();
