@@ -1,3 +1,47 @@
 body {
   background-color: lightblue;
 }
+
+.hand {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+}
+.horizontal {
+  flex-flow: row wrap;
+  left: 15vw;
+  height: 170px;
+  width: 70vw;
+}
+.vertical {
+  flex-flow: column wrap;
+  top: 5vh;
+  height: 90vh;
+  width: 120px;
+}
+
+#player1Hand {
+  top: 0;
+}
+#player4Hand {
+  bottom: 0;
+}
+
+#player2Hand {
+  left: 0;
+}
+#player3Hand {
+  right: 0;
+}
+
+.card {
+  align-content: center;
+  background-color: lightgoldenrodyellow;
+  box-sizing: border-box;
+  height: 160px;
+  margin: 5px;
+  overflow: hidden;
+  padding: 10px;
+  width: 110px; 
+}
